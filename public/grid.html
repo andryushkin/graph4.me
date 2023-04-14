@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="En">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Squared Graph paper | graph4.me</title>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<meta name="description" content="Useful Grid (squared) graph paper generator.">
+		<link rel="canonical" href="http://graph4.me/grid">
+		<link rel="apple-touch-icon" sizes="57x57" href="favicon/grid/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/grid/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/grid/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/grid/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/grid/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/grid/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/grid/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/grid/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/grid/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="favicon/grid/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="favicon/grid/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="favicon/grid/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="favicon/grid/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="favicon/grid/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="favicon/grid/manifest.json">
+        <link rel="mask-icon" href="favicon/grid/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="apple-mobile-web-app-title" content="Graph paper generator">
+        <meta name="application-name" content="Graph paper generator">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="favicon/grid/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+	</head>
+	<script>
+		var curName = 'engineering-5mm-gray-noborder';
+
+	</script>	
+ 
+	<body id="target-bg-linovka">
+
+		<div class="container">
+
+			<div class="content">
+	        <div class="row">
+
+	        	<div class="graphgenerator">
+					<div class="hone"><h1>Grid graph paper</h1> <a href="#modal" class="btn-float"><img src="images/icon/menu-round-2.png" style="width:35px; height:35px;"></a></div>
+					<h5 class="h-first">Type</h5>
+	                <div class="button-block">
+						<button class="btn" type="button" data-val="engineering" data-part="0">Engineering</button>
+						<button class="btn" type="button" data-val="cartesian" data-part="0">Cartesian</button>
+	                </div> 					
+					<h5 class="h-second">Spacing</h5>
+	                <div class="button-block">
+		                <button class="btn" type="button" data-val="10perinch" data-part="1">1/10 inch</button>
+						<button class="btn" type="button" data-val="quarterinch" data-part="1">1/4 inch</button>
+						<button class="btn" type="button" data-val="halfinch" data-part="1">1/2 inch</button><br>
+						<button class="btn" type="button" data-val="1mm" data-part="1">1 mm</button>
+						<button class="btn" type="button" data-val="5mm" data-part="1">5 mm</button>
+						<button class="btn" type="button" data-val="1cm" data-part="1">1 cm</button>
+	                </div>              
+	                <h5 class="h-third">Color</h5>
+	                <div class="button-block">
+						<button class="btn bordergray" data-val="gray" data-part="2">Gray</button>
+						<button class="btn borderblack" data-val="black" data-part="2">Black</button>
+						<button class="btn borderblue" data-val="blue" data-part="2">Blue</button>
+						<button class="btn bordergreen" data-val="green" data-part="2">Green</button>
+						<button class="btn borderorange" data-val="orange" data-part="2">Orange</button>
+                        
+	                </div>
+	                <h5 class="h-fourth">Margin</h5>
+	                <div class="button-block">
+	                    <button class="btn" data-val="border" data-part="3" id="border">Border</button>
+	                    <button class="btn" data-val="noborder" data-part="3" id="noborder">No border</button>
+	
+	                </div> 
+					<div class="download">
+						Download: <a id="target-a4-linovka"><strong>A4</strong></a>, <a id="target-a3-linovka"><strong>A3</strong></a>, <a id="target-letter-linovka"><strong>Letter</strong></a>, <a id="target-tabloid-linovka"><strong>Tabloid</strong></a>
+					</div>
+<p id=param></p>
+
+					  
+				</div>
+	        </div>
+			</div>
+ 
+	    <div class="topdiv" id="ramka"> </div>
+		<div class="leftdiv" id="ramka"> </div>
+	    <div class="rightdiv" id="ramka"> </div>
+    
+
+
+	   
+		<footer class="page-footer">
+			<div class="row">
+				<div class="col2">
+					beta / © 2016 graph4.me &mdash; Free Online Printable Graph Paper PDFs
+				</div>
+				<div class="col2">
+				<a href="https://www.instagram.com/graph4.me/" title="Instagram @graph4.me &ndash; scetches, tricks, news and updates">
+					<img src=/images/icon/instagram.png style="width:16px; height:16px"> @graph4.me</a>
+				</div>
+			</div>
+		</footer>
+		    
+		<script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="/js/remodal.min.js"></script>
+		<script type="text/javascript" src="/js/script.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-71348600-1', 'auto');
+		  ga('send', 'pageview');
+		
+		</script>
+		 
+		        
+		    <div class="remodal" data-remodal-id="modal" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+		      <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		      		<div>
+			  							<div class="icon-graph">
+			  								<a href="grid.html">
+			  									<img src="images/icon/grid-icon.png" alt="Grid Graph Paper" class="graphicon">
+			  								</a>
+			  								<h2><a href="grid.html">Grid paper</a></h2>
+			  							</div>
+			  							<div class="icon-graph">
+			  								<a href="dots.html">
+			  									<img src="images/icon/dots-icon.png" alt="Dots grid Paper" class="graphicon">
+			  								</a>
+			  								<h2><a href="dots.html">Dots grid paper</a></h2>
+			  							</div>
+			  							<div class="icon-graph">
+			  								<a href="lined.html">
+			  									<img src="images/icon/lined-icon.png" alt="Lined Graph Paper" class="graphicon">
+			  								</a>
+			  								<h2><a href="lined.html">Lined paper</a></h2>
+			  							</div>
+			  							<div class="icon-graph">
+			  								<a href="axonometric.html">
+			  									<img src="images/icon/axonometric-icon.png" alt="Axonometric Graph Paper" class="graphicon">
+			  								</a>
+			  								<h2><a href="axonometric.html">Axonometric paper</a></h2>
+			  							</div>
+			  							<div class="icon-graph">
+			  								<a href="isometric.html">
+			  									<img src="images/icon/isometric-icon.png" alt="Isometric Graph Paper" class="graphicon">
+			  								</a>
+			  								<h2><a href="isometric.html">Isometric paper</a></h2>
+			  							</div>
+			  							<!--<div class="icon-graph">
+			  								<a href="isometricdots.html">
+			  									<img src="images/icon/dots-icon.png" alt="Dots grid Paper" class="graphicon">
+			  								</a>
+			  								<h2><a href="isometricdots.html">Isometric dotted paper</a></h2>
+			  							</div>-->
+			  							<div class="icon-graph">
+			  								<a href="hexagonal.html">
+			  									<img src="images/icon/hexagonal-icon.png" alt="Hexagonal Graph Paper" class="graphicon">
+			  								</a>
+			  								<h2><a href="hexagonal.html">Hexagonal paper</a></h2>
+			  							</div>
+			  							<div class="icon-graph">
+			  								<a href="knitting.html">
+			  									<img src="images/icon/knitting-icon.png" alt="Knitting graph paper" class="graphicon">
+			  								</a>
+			  								<h2><a href="knitting.html">Knitting paper</a></h2>
+			  							</div>
+			  			
+					</div>
+		    </div>
+		
+	</body>
+</html>
